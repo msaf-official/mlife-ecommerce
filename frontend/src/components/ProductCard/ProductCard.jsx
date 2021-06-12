@@ -1,31 +1,38 @@
 import React from 'react'
 import "./productcard.css"
-function ProductCard() {
-    return (
+import circle from '../../resources/icons/circle.png'
+import fifty_off from '../../resources/icons/50_off.png'
+import trending2 from '../../resources/icons/trending2.png'
+function ProductCard({topic}) {
+    return (<>
+            <h1 style={{textAlign:"center",marginTop:30,fontFamily:"PT Sans Caption",fontSize:40,fontWeight:"lighter"}}>{topic}</h1>
         <div className="product_container">
             <div className="product_container_box">
-                
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/HPC/GW/Grocery_1500x600._CB669573043_.jpg"/>
+                <div style={{marginLeft:65,marginBottom:-65,zIndex:99,alignSelf:"start",backgroundImage:"url("+ circle+")",padding:7 , width: 50,height:50,backgroundSize:"cover"}}>
+                    <img src={fifty_off} style={{width:35,height:35}} />
+                </div>
+                <img src={trending2}/>
 
                 <div className="product_name"><span>RS 548</span></div>
             </div>
             <div className="product_container_box">
                 
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
+                <img src={trending2}/>
                 <div className="product_name"><span>RS 548</span></div>
             </div>
             <div className="product_container_box">
                 
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/HPC/GW/Grocery_1500x600._CB669573043_.jpg"/>
+                <img src={trending2}/>
 
                 <div className="product_name"><span>RS 548</span></div>
             </div>
             <div className="product_container_box">
                 
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
+                <img src={trending2}/>
                 <div className="product_name"><span>RS 548</span></div>
             </div>
         </div>
+        </>
     )
 
 }

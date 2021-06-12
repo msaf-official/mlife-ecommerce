@@ -9,10 +9,8 @@ function App() {
       <Header />
       <Carousel />
       <Trending/>
-      <h1 style={{textAlign:"center"}}>New Trending</h1>
-      <ProductCard/>
-      <h1 style={{textAlign:"center"}}>New Arrivals</h1>
-      <ProductCard/>
+      <ProductCard topic={"Top Categories"}/>
+      <ProductCard topic={"New Arrival"}/>
       <ApplinceceSlider/>
     </>
   );
