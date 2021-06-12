@@ -1,70 +1,81 @@
 import React from 'react'
 import "./applicenceslider.css"
-function ApplinceceSlider() {
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import trending1 from '../../resources/icons/trending1.png'
+import trending2 from '../../resources/icons/trending2.png'
+import trending3 from '../../resources/icons/trending3.png'
+import trending4 from '../../resources/icons/trending4.png'
+function ApplinceceSlider({topic}) {
     return (
         <div className="main_applicence_contaier">
-             <h1>Electrical Appliences</h1>
+            <div className="position_right">
+            
+            <ChevronRightIcon style={{fontSize:"40px",fontWeight:"bold"}}/>
+            </div>
+            <div className="position_left">
+           
+            <ChevronLeftIcon style={{fontSize:"40px",fontWeight:"bold"}}/>
+            </div>
+            <h3 style={{padding:"4px",fontFamily:"PT Sans Caption",fontSize:20,fontWeight:"lighter"}}>{topic}</h3>
                <div className="applicence_contaier">
+                   
               
             <div className="applicence_container_box">
-                
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
+            <img src={trending1}/>
                 <div className="product_name">this is product</div>
             </div>
             <div className="applicence_container_box">
-             
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
+            <img src={trending2}/>
                 <div className="product_name">this is product</div>
             </div>
             <div className="applicence_container_box">
+              
+                <img src={trending3}/>
                 <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
             </div>
             <div className="applicence_container_box">
+              
+                <img src={trending4}/>
                 <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
             </div>
             <div className="applicence_container_box">
                
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
+                <img src={trending4}/>
                 <div className="product_name">this is product</div>
             </div>
             <div className="applicence_container_box">
+               
+                <img src={trending4}/>
                 <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
             </div>
             <div className="applicence_container_box">
+               
+                <img src={trending4}/>
                 <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
             </div>
             <div className="applicence_container_box">
+            
+                <img src={trending4}/>
                 <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
             </div>
             <div className="applicence_container_box">
-                <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
-            <div className="applicence_container_box">
-                <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
-            <div className="applicence_container_box">
-                <div className="product_name">this is product</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
-            <div className="applicence_container_box">
-                <div className="product_name">F34</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
-            <div className="applicence_container_box">
-                <div className="product_name">4</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
-            <div className="applicence_container_box">
-                <div className="product_name">3</div>
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Zeitgeist/Mar20/Covid19/2021/IN_GWD_Covid19_CustomerMsg_MH_ENG_1x_v1._CB669806110_.jpg"/>
-            </div>
+               
+               <img src={trending4}/>
+               <div className="product_name">this is product</div>
+           </div>
+           <div className="applicence_container_box">
+              
+               <img src={trending4}/>
+               <div className="product_name">this is product</div>
+           </div>
+           <div className="applicence_container_box">
+           
+               <img src={trending4}/>
+               <div className="product_name">this is product</div>
+           </div>
+          
+           
           </div>
         </div>
     )
