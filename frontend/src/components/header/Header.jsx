@@ -23,7 +23,7 @@ const Header = () => {
   };
 
   return (
-    <div style={{position:"sticky",top:0,background:"white",zIndex:100}}>
+    <div style={{position:"sticky",top:0,background:"white",zIndex:100,paddingBottom:10}}>
       <div className={"container"} >
         <div className={"company_logo"}>
           <img src={company_logo} alt="company logo"></img>
